@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>customer page</title>
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/header.css">
+
+  <style>
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .box {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-top: 0;
+    }
+
+    u {
+      text-decoration: underline;
+    }
+
+    b {
+      font-weight: bold;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    img {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    .buttons {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 14px;
+      border: none;
+      border-radius: 4px;
+      background-color: #4caf50;
+      color: white;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+    <!--Header start-->
+    <div id="header">
+      <h1>New Wave Shopping Mall</h1>
+    </div>
+    
+    <div id="menu-bar-container">
+      <label for="logo"></label>
+      <img src="images/logo.jpg" alt="logo" width="100px" height="100px" border="1px">
+      
+      <nav id="menu-bar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Category</a></li>
+          <li><a href="#">Seller Account</a></li>
+          <li><a href="#">Customer Account</a></li>
+          <li><a href="#">Order History</a></li>
+          <li>
+            <form>
+              <input type="text" name="search" placeholder="Browse Items">
+              <input type="submit" value="Search">
+            </form>
+          </li>
+        </ul>
+      </nav>
+    </div>
+     <!--Header end-->
+  <div class="container">
+    <div class="box"></div>
+    <fieldset>
+      <h2><u><b>Your Login Information</b></u></h2>
+      <div class="form-group">
+        <label for="photo">Photo</label>
+        <img src="images/avatar.jpg" alt="Customer photo" width="100px" height="100">
+      </div>
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+      </div>
+      <div class="form-group">
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email">
+      </div>
+    </fieldset>
+
+    <br>
+
+    <div class="box">
+      <fieldset> 
+        <h2><u><b>Your personal info</b></u></h2>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <div class="name-fields">
+            <input type="text" id="firstName" name="firstName" placeholder="First Name">
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob">
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="text" id="phone" name="phone">
+        </div>
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <textarea name="field5" cols="53" rows="6"></textarea> <br>
+        </div>
+      </fieldset>
+    </div>
+    <div class="buttons">
+      <button type="button" onclick="cancel()">Cancel</button>
+      <button type="button" onclick="save()">Save</button>
+    </div>
+  </div>
+
+  <br> <br>
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Customer care</h4>
+          <ul>
+            <li><a href="#">contact us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Feedback page</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>The New Wave</h4>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Terms & conditions</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="footer-col">
+          <h4>Payment method</h4>
+          <div>
+            <img src="images/visa.png" height="50" width="50">
+            <img src="images/card.png" height="50" width="50">
+            <img src="images/american-express.png" height="50" width="50">
+            <img src="images/discover.png" height="50" width="50">
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-google-plus"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/customer.js"></script>
+ </body>
+ </html>

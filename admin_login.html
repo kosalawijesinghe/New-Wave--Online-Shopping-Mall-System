@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Login</title>
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <style>
+
+    #content {
+      margin: 50px auto;
+      width: 400px;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+  
+    #content h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    #content form {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    #content label {
+      margin-bottom: 10px;
+    }
+  
+    #content input[type="text"],
+    #content input[type="password"],
+    #content input[type="submit"] {
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+    }
+  
+    #content input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+  
+    #content input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+  
+
+</head>
+<body>
+   <!--Header start-->
+   <div id="header">
+    <h1>New Wave Shopping Mall</h1>
+  </div>
+  
+  <div id="menu-bar-container">
+    <label for="logo"></label>
+    <img src="images/logo.jpg" alt="logo" width="100px" height="100px" border="1px">
+    
+    <nav id="menu-bar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Category</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.php">Signup</a></li>
+		<li><a href="cart.html">Cart</a></li>
+        <li><a href="admin_login.html">Admin Portal</a></li>
+        <li>
+          <form>
+            <input type="text" name="search" placeholder="Browse Items">
+            <input type="submit" value="Search">
+          </form>
+        </li>
+      </ul>
+    </nav>
+  </div>
+   <!--Header end-->
+  
+  <div id="content">
+    <h2>Admin Login</h2>
+    <form action="admin-login.php" method="POST" id="login-form">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <br>
+      <input type="submit" value="Login">
+    </form>
+  </div>
+
+  <div id="footer">
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Customer care</h4>
+            <ul>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Feedback page</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>The New Wave</h4>
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Terms & conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="footer-col">
+            <h4>Payment method</h4>
+            <div>
+              <img src="images/visa.png" height="50" width="50">
+              <img src="images/card.png" height="50" width="50">
+              <img src="images/american-express.png" height="50" width="50">
+              <img src="images/discover.png" height="50" width="50">
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-google-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+  const form = document.getElementById("login-form");
+
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault(); 
+    
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+  
+    if (username === "admin" && password === "admin") {
+     
+      window.location.href = "admin.html";
+    } else {
+      alert("Invalid credentials. Please try again."); 
+    }
+  });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+
+body {
+    width:100%;
+}
+
+.border{
+	width: 55%;
+    height: 100%;
+    padding: 50px;
+    border: 1px solid red;
+	background-color:#FFFFF0;
+	text-align:left;
+}
+.btn1{
+	background-color:royalblue;
+	height:40px;
+	width:70px;
+	border:none;
+	border-radius:6px;
+	font-size:15px;
+	cursor:pointer;
+	
+	
+	
+
+}
+

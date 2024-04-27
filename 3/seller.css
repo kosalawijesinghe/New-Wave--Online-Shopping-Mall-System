@@ -1,0 +1,52 @@
+.tbin1{
+	
+	float:right;
+	padding:0 650px 0 0;
+	
+
+}
+.tbin2{
+	float:right;
+	padding:0 650px 10px 0;
+}
+.input1{
+	width:400px;
+	height:40px;
+	
+}
+#form1{
+	width:90%;
+	box-sizing:border-box;
+	background:rgba(255,255,255,0.7);
+	padding: 10px;
+	
+	justify-content:space-between;
+
+	box-shadow: inset 0 0 0 2px #999;
+    transform: translateY(1px); 
+	background-color: #feddc9;;
+	
+}
+.input{
+	
+	background-color:#EFF2FB;
+	height:40px;
+
+	border:none;
+	outline:none;
+	border-radius:6px;
+	padding: 0 0 0 45px;
+	
+	
+}
+
+.t{
+	padding:2px;
+}
+.save{
+	height:40px;
+	width:80px;
+	border-radius:6px;
+	background-color:orange;
+	border:none;
+}

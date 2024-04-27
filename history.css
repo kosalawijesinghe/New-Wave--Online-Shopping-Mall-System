@@ -1,0 +1,30 @@
+@charset "utf=8";
+
+.body{
+    background-color:white ;
+}
+
+.div{
+    background-color:rgb(212, 209, 206);
+    float: left;
+    margin-left:55px ;
+    margin-right:55px ;
+    margin-top:10px ;
+    margin-bottom:10px ;
+}
+
+.img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:5px ;
+}
+.para{
+    margin-left:5px ;
+    margin-right:5px ;
+}
+.main{
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    flex: auto;
+}

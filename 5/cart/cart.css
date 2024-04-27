@@ -1,0 +1,37 @@
+@charset "utf=8";
+
+.body{
+    background-color:white ;
+}
+
+.di{
+    background-color:cornsilk;
+    float: left;
+    margin-left:55px ;
+    margin-right:55px ;
+    margin-top:10px ;
+    margin-bottom:10px ;
+}
+.btn{
+    float:initial;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:medium;
+    color:black;
+    margin-left:5px ;
+    margin-right:5px ;
+}
+.img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:5px ;
+}
+.para{
+    margin-left:5px ;
+    margin-right:5px ;
+}
+.mn{
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    flex: auto;
+}

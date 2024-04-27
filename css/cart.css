@@ -1,0 +1,24 @@
+.container {
+ display:inline-flex;
+ padding-inline-start: 100px;
+ padding-block-end: 20px;
+}
+fieldset
+{
+  background-color:antiquewhite;
+}
+
+
+.btn1{
+    float:initial;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:medium;
+    color:darkred;
+}
+
+.btn2{
+    float:initial;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:medium;
+    color:darkred;
+}
